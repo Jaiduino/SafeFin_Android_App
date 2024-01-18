@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Activity.AddCustomer"
+    android:background="@drawable/bg_img">
+  <com.google.android.material.progressindicator.LinearProgressIndicator
+      android:id="@+id/linearprogressbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:indeterminate="true" />
+  <TextView
+      android:id="@+id/customer_textview"
+      android:layout_marginTop="75dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Customer Details"
+      android:textSize="30dp"
+      android:layout_marginHorizontal="20dp"
+      android:textStyle="bold">
+
+  </TextView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardViewCustomer_Details"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="20dp"
+      android:layout_marginTop="30dp"
+     >
+
+    <ScrollView
+        android:id="@+id/cardViewScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/fullNameTextInputLayout"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Full Name"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editfullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/passwordTextInputLayout"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Password"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          app:passwordToggleEnabled="true"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/confirm_passwordTextInputLayout"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Confirm Password"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          app:passwordToggleEnabled="true"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textLayoutEmail"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Email Address"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmail"
+            android:inputType="textEmailAddress"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textLayoutContact_No"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Contact_No"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editContactNo"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textLayoutAadhar_No"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Aadhar No"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editAadharNo"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textLayoutDate"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Select Date"
+          app:startIconDrawable="@drawable/baseline_calendar_month_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="false"
+            android:inputType="none"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:id="@+id/textLayoutAddress"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Full Address"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editfullAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight="5"
+            android:id="@+id/textLayoutCity"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="City"
+            app:startIconDrawable="@drawable/baseline_edit_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editCity"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight="5"
+            android:id="@+id/textLayoutPincode"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:hint="Pincode"
+            app:startIconDrawable="@drawable/baseline_edit_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/editPincode"
+              android:inputType="number"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+      </LinearLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_weight="5"
+          android:id="@+id/textLayoutState"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="State"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_weight="5"
+          android:id="@+id/textLayoutCountry"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginHorizontal="10dp"
+          android:layout_marginVertical="5dp"
+          android:hint="Country"
+          app:startIconDrawable="@drawable/baseline_edit_24"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+      <Button
+          android:layout_marginTop="10dp"
+          android:id="@+id/buttonSave"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Save"
+          android:layout_gravity="center"
+
+          />
+
+    </LinearLayout>
+    </ScrollView>
+
+  </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

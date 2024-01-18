@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFBECD"
+    tools:context=".Activity.CustomerDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Customer  Name"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+
+                <!--    <TextView-->
+                <!--        android:id="@+id/customer_id"-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:paddingTop="10dp"-->
+                <!--        android:text="Customer Id:"-->
+                <!--        android:textColor="@color/black"-->
+                <!--        tools:ignore="MissingConstraints" />-->
+
+                <!--    <TextView-->
+                <!--        android:id="@+id/customer_address_id"-->
+                <!--        android:layout_width="wrap_content"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:paddingTop="10dp"-->
+                <!--        android:text="Customer Address Id"-->
+                <!--        android:textColor="@color/black"-->
+                <!--        tools:ignore="MissingConstraints" />-->
+
+
+                <TextView
+                    android:id="@+id/adhar_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Adhar No."
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/email_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/phone_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Date of Birth"
+                    android:textColor="@color/black"
+                    tools:ignore="MissingConstraints" />
+
+
+                <!--        <TextView-->
+                <!--            android:id="@+id/customer_login_id"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:text="Customer Login Id"-->
+                <!--            android:paddingTop="10dp"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--            app:layout_constraintTop_toTopOf="parent"-->
+                <!--            tools:ignore="MissingConstraints" />-->
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
